@@ -1,0 +1,14 @@
+PROBLEM STATEMENT:
+
+You have a website where people can upload and sell their own clothes. Thus, it is not your own products that are up on the platform, but any person can join and upload photos of what they want to sell.
+To benefit the people who are searching to buy, you have set different categories that can be selected when creating a product, for example, shoes, trousers, male or female and so on.
+
+At first, it all seems fine - all the products are labelled and are easy to search. However, you soon begin to notice that some people do not take the time to categorize their products. 
+This is problematic because the consumers struggle to find these items and the platform loses ground to the competition.
+
+You decide to create an automatic system to assign labels whenever they are missing or wrong.
+
+
+OBJECTIVE: 
+
+Create CNNs that classify and label images of clothes and other fashion items.

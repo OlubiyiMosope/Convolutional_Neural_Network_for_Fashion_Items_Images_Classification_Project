@@ -1,0 +1,29 @@
+THE STEPS TO BE TAKEN TO SOLVE THE PROBLEM:
+
+- The problem we have here is a classification problem, and Convoluted Neural Networks (CNN) would be used to solve it.
+  CNNs are a subtype of deep learning neural networks that have at least a convolutional layer.
+  CNNs are ideal for this problem because because they are specialized in inferring information from data that ahas some spatial structure and correlation, i.e images.
+
+
+PROCEDURE:
+
+- First we'll build a primary model to classify all the images into one of the 3 main categories.
+  
+- Once this is done, we'll build models to further classify the images in each category into their sub-categories using one of two approaches:
+	1. the approach of building a model to perform the classification into all the sub categories at once
+	2. building multiple models to perform smaller classification tasks and stack these models hierachically with the output of one being fed as input into another.
+	   For our case, the options we have are:
+		- split the category into different genders then classify each gender split into the different types, or 
+		- split it into the different types then classify each type by gender
+
+
+APPROACH TAKEN FOR EACH CATEGORY:
+- Glasses and Sunglasses (2):  Approach 1 - Because this has only two sub-categories, the classification into sub-categories can be easily done at once.
+- Trousers and Jeans (4):  Approach 2     - This has 4 sub-categories. There 3 models would be built here in total.
+				  	  - Trousers_and_Jeans_Gender_Split model: to perform the initial split of this category based on gender only.
+					  - Trousers_and_Jeans_Type_Male model: to split the products for male gender into the types trousers or jeans.
+					  - Trousers_and_Jeans_Type_Female model: to split the products for female gender into the types trousers or jeans. 
+										  This model will employ regularization to improve its performance.
+- Shoes (11):  Approach 1. 	- This has 11 sub-categories. Data augmentation will be applied to artificially create more samples for our data. 
+				- The dropout technique for improving model performance will be employed here.
+

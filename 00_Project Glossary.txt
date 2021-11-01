@@ -1,0 +1,30 @@
+PROJECT GLOSSARY:
+
+
+Tensorflow: Is an open source artificial intelligence library, using data flow graphs to build models. It allows developers to create large-scale neural networks with many layers.
+	    Tensorflow version 2.3.0 was used for this project.
+
+Tensorboard: An extension to tensorflow that provides tools for logging useful data and visualizations of numerious metrics.
+
+Model architecture: These is the compositional structure of the model where the object is expressed as a layered composition of primitives i.e neurons and nodes.
+
+Matplotlib: Is a comprehensive library for creating static, animated, and interactive visualizations in Python.
+
+Hyperparameters: These are the variables which determine the network structure, and the variables which determine how the network is trained.
+		 Some of the hyperparameters tuned during training of the models include: filter/kernel size, filter number, dense layer size, dropout proportion, lambda constant (from regularization equation). 
+
+Loss Functions: A metric that measures how far an estimated value is from its true value. The loss functions used in this project are variations of the Cross Entropy loss function.
+
+Optimization Algorithm: Is the algorithm responsible for finding the set of inputs to an objective function that results in minimization of the loss.
+			The optimization algorithm utilised in this project is the Adaptive Moment Estimation (ADAM). It utilises dynamic learning rate scheduling.
+
+Performance Measures: These are the metrics by which the performance of the models are evaluated. The metrics used in this project are confusion matrix, and accuracy.
+
+Dropout: A technique used to optimize the performance of the CNN.
+	 Dropout refers to the technique in which some of the outputs of a dense layer are randomly set to zero, thus helping individual neurons to learn more general patterns about the data set.
+
+L2 regularization: A technique used to optimize the performance of the CNN.
+		   This refers to the method of trying to modify the loss function with an additional factor that is the sum of the model's weights squared.
+
+Data Augmentation: A technique used to optimize the performance of the model by improving the quality of the data through transformations to create more samples.
+
